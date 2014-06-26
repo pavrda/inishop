@@ -1,0 +1,81 @@
+body {
+	width: 100%;
+	text-align: center;
+	font-family: "Trebuchet MS", "verdana", sans-serif;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.licha {
+	background-color: #F0DFCB;
+}
+
+.suda {
+	background-color: #F0CBDF;
+}
+
+th {
+	background-color: #F0DFCB;
+}
+
+td {
+	padding-left:0.5ex;
+	padding-right:0.5ex;
+}
+
+.subPage {
+	display: none;
+}
+
+#divLogin {
+	width: 100%;
+	xborder: 1px solid red;
+	text-align: center;
+}
+
+form.loginForm {
+	margin-left: 10%;
+	width: 80%;
+	xborder: 1px solid #c5874e;
+	text-align: left;
+}
+
+
+.loginForm input, .btnZpet, .btnObjednat {
+	width: 100%;
+	height: 3em;
+	border: 1px solid #c5874e;
+	font-size: 16pt;
+	font-weight: bold;
+	color: #c5874e;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.loginForm input[type="text"], .loginForm input[type="password"]{
+	text-indent: 1em;
+}
+
+#spanObjednavka {
+	font-weight: bold;
+}
+
+.btnZpet, .btnObjednat { 
+	width: 15em;
+}
+
+.btnObjednat {
+	color: #ffffff;
+	background-color: green;
+}
+
+
+#divObjednavka {
+	xwidth: 100%;
+	padding-left: 1em;
+	padding-right: 1em;
+	text-align: left;
+}
+
+.center {
+	text-align: center;
+}
