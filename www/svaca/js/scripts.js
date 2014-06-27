@@ -143,60 +143,12 @@ function init()
     storage("getItem","zboziOblibenaMena","jSON");
     //transition('#page-registrace1','fade');
 
-
-
-    $(".clickNext").keypress(function(event) {
-        if(event.keyCode == 13) {
-            if($(this).attr('id')=="prihlaseniHeslo")
-            {
-                prihlaseniAjax();
-                return;
-            }
-            if($(this).attr('id')=="registraceHeslo2")
-            {
-                registraceAjax();
-                return;
-            }
-
-            $(this).nextAll('input:first').focus();
-            /*
-             for(var i=0; i< keyPosloupnost.length; i++)
-             {
-             if(keyPosloupnost[i]==$(this).attr('id'))
-             {
-             if(keyPosloupnost[i+1]=="prihlaseniPrihlasitSe")
-             {
-             prihlaseniAjax();
-             return;
-             }
-             $('#'+keyPosloupnost[i+1]).focus();
-             console.log("focus na:" + keyPosloupnost[i+1]);
-             return;
-             }
-             }
-             */
-        }
-    });
-
-
-    $("#pages a").click(function(e){
-        //if(e.target.hash.slice(1)=="") console.log("nic");
-        e.preventDefault();
-        if(e.target.hash == null) return;
-        var nextPage = $(e.target.hash);
-        if(e.target.hash.slice(1)!="") {
-            transition(nextPage, 'fade');
-            //console.log(e.target.hash.slice(1));
-            $("#pages").attr("className", e.target.hash.slice(1));
-        }
-
-
-    });
-
-
-
-    //storeIntelligrapeLogo();
-
+    var nextPage = $(e.target.hash);
+    if(e.target.hash.slice(1)!="") {
+        transition(nextPage, 'fade');
+        //console.log(e.target.hash.slice(1));
+        $("#pages").attr("className", e.target.hash.slice(1));
+    }
 
 
 }
