@@ -4,56 +4,14 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "cz.initedsolutions.inishop"
-        version   = "1.2">
-    <!--
-        0.0.18
-        - verze phonegap 3.1.0
-        - pridany API File a FileTransfer
-        - zakladni funkce pro ulozeni a obnoveni obrazku (zatim test)
-        - vypnuti efektu prechodu
-        - android-windowSoftInputMode
-        - oprava: radio buton kuryr se znovu nastavy na bufet
-        - misto vyzvednuti musi byt vyplneno
-
-        0.0.18b
-        - vpnuti android-windowSoftInputMode (zobrazuje samovolne klavesnici v hlavnim okne)
-        - oprava pocitani ceny pri navraceni se do kosiku
-        - zmena textu -kuryra- pri dokonceni platby
-        - oprava touch na radiobutonu registrace
-
-        0.0.19
-        - podpora nacitani noveho zbozi
-        0.0.20
-        - css optimalizace pro iPhone
-        0.0.21
-        -stranka oblibene
-        - moznost pridat menu do oblibenych
-        - FB plugin a test
-        - zmena plugineu device
-        0.0.22
-        - oprava zobrazeni iPhone, vypnuti height=device-height
-        - uprava fb login
-        0.0.23
-        - pridan spash screen pro ios a celkove pro vsechny platformy
-        - oprava drobnych chyb
-        0.0.24
-        - oprava chyb (cerna obrazovky kdyz neni sit)
-        1.0
-        - oprava chyb - filtr na kategorii s carkou nefungoval
-        ready na iTunes
-        1.1
-        - tl odhlásit v nastavení
-        1.2
-        - pamatovani prihlaseni
-        - oprava zobrazeni okna "Zaplatit svacu" u high screen bylo dole
-    -->
+        version   = "0.0.2">
 
 
     <preference name="phonegap-version"/>
 
-    <name>Fajn Sváča</name>
+    <name>Inishop</name>
 
-    <description>Revoluce ve školním stravování</description>
+    <description>Mobilní eshop</description>
 
     <author href="http://inited.cz" email="info@inited.cz">INITED Solutions s.r.o.</author>
 
@@ -82,7 +40,7 @@
     <preference name="permissions"                value="none"/>
 
     <!-- Customize your app and platform with the preference element. -->
-    <preference name="phonegap-version"      value="3.3.0" /> -->      <!-- all: current version of PhoneGap -->
+    <preference name="phonegap-version"      	  value="3.4.0" /> -->      <!-- all: current version of PhoneGap -->
     <preference name="EnableViewportScale"        value="true" />
     <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
@@ -108,18 +66,16 @@
     -->
 
     <!-- Define app icon for each platform. -->
-    <icon src="icon.png" />
-    <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:density="ldpi" />
-    <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:density="mdpi" />
-    <icon src="res/icon/android/icon-72-hdpi.png"   gap:platform="android"    gap:density="hdpi" />
-    <icon src="res/icon/android/icon-96-xhdpi.png"  gap:platform="android"    gap:density="xhdpi" />
-    <icon src="res/icon/ios/icon-57.png"            gap:platform="ios"        width="57" height="57" />
-    <icon src="res/icon/ios/icon-72.png"            gap:platform="ios"        width="72" height="72" />
-    <icon src="res/icon/ios/icon-57-2x.png"         gap:platform="ios"        width="114" height="114" />
-    <icon src="res/icon/ios/icon-72-2x.png"         gap:platform="ios"        width="144" height="144" />
-    <icon src="res/icon/windows-phone/icon-48.png"  gap:platform="winphone" />
-    <icon src="res/icon/windows-phone/icon-62.png"  gap:platform="winphone" />
-    <icon src="res/icon/windows-phone/icon-173.png" gap:platform="winphone"   gap:role="background" />
+    <icon src="icon/icon128x128.png" />
+    <icon src="icon/icon36x36.png"   gap:platform="android"    gap:density="ldpi" />
+    <icon src="icon/icon48x48.png"   gap:platform="android"    gap:density="mdpi" />
+    <icon src="icon/icon72x72.png"   gap:platform="android"    gap:density="hdpi" />
+    <icon src="icon/icon96x96.png"   gap:platform="android"    gap:density="xhdpi" />
+    <icon src="icon/icon57x57.png"   gap:platform="ios"        width="57" height="57" />
+    <icon src="icon/icon72x72.png"   gap:platform="ios"        width="72" height="72" />
+    <icon src="icon/icon114x114.png" gap:platform="ios"        width="114" height="114" />
+    <icon src="icon/icon144x144.png" gap:platform="ios"        width="144" height="144" />
+    
 
     <!-- Define app splash screen for each platform. -->
     <gap:splash src="res/screen/android/screen-ldpi-portrait.png"  gap:platform="android" gap:density="ldpi" />
